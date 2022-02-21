@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const fileName = 'talker.json';
 
-   function createTalker(req, res) {
+   function talkerEdit(req, res) {
        const { name, age, talk } = req.body;
        const { id } = req.params;
        const newData = { 
@@ -22,4 +22,4 @@ const fileName = 'talker.json';
     return res.status(200).json(newData);
 }
 
-module.exports = createTalker;
+module.exports = talkerEdit;
