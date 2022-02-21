@@ -8,6 +8,7 @@ const dateValidation = require('../middlewares/dateValidation');
 const talkValidation = require('../middlewares/talkValidation');
 const ageValidation = require('../middlewares/ageValidation');
 const createTalker = require('../controllers/createTalker');
+const talkerEdit = require('../controllers/talkerEdit');
 
 const router = express.Router();
 
@@ -22,4 +23,12 @@ rateValidation,
 dateValidation,
 createTalker);
 
+router.put('/:id', 
+tokenValidation,
+nameValidation, 
+ageValidation,
+talkValidation,
+rateValidation,
+dateValidation,
+talkerEdit);
 module.exports = router;
