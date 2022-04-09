@@ -1,7 +1,7 @@
 
 # Boas vindas ao repositório do Talker Manager!
 
-Projeto realizado durante o módulo de Back-End do curso de desenvolvimento web da Trybe, onde foi desenvolvido uma API de um CRUD (**C**reate, **R**ead, **U**pdate e **D**elete) de palestrantes. Foi criado endpoints com a função ler e escrever em um arquivo(um .json disponibizado pela Trybe), isso utilizando o módulo `fs`.
+Projeto realizado durante o módulo de Back-End do curso de desenvolvimento web da Trybe, onde foi desenvolvido uma API de um CRUD (**C**reate, **R**ead, **U**pdate e **D**elete) de palestrantes. Foi criado endpoints com a função de ler e escrever em um arquivo(um .json disponibizado pela Trybe), isso utilizando o módulo `fs`.
 
 
 ---
