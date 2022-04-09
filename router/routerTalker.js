@@ -10,6 +10,7 @@ const ageValidation = require('../middlewares/ageValidation');
 const createTalker = require('../controllers/createTalker');
 const talkerEdit = require('../controllers/talkerEdit');
 const talkerDelete = require('../controllers/talkerDelete');
+const talkerSearch = require('../controllers/talkerSearch');
 
 const router = express.Router();
 
@@ -32,6 +33,8 @@ talkValidation,
 rateValidation,
 dateValidation,
 talkerEdit);
+
+router.get('/talker/search', tokenValidation, talkerSearch);
 
 router.delete('/:id', tokenValidation, talkerDelete);
 module.exports = router;
